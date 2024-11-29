@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regester.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <div class="main">
+        <form id="signupForm" action="">
+            <div class="grid-container">
+                <div>
+                    <label for="username">First name</label>
+                    <input type="text" id="username" name="username" 
+                           placeholder="Enter your first name" 
+                           required pattern="^[a-zA-Z0-9_]{3,15}$" 
+                           title="Username must be 3-15 characters long and can only contain letters, numbers, and underscores.">
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="Password must be at least 6 characters long and include one letter and one number."
+                           required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" 
+                           title="Password must be at least 6 characters long and include one letter and one number.">
+            
+                    <label for="quantity">Phone Number</label>
+                    <input type="text" id="quantity" name="quantity" 
+                           placeholder="Enter your 10-digit phone number" 
+                           required pattern="^\d{10}$" 
+                           title="Enter a valid 10-digit phone number.">
+                </div>
+                <div>
+                    <label for="username">Second name</label>
+                    <input type="text" id="username" name="username" 
+                           placeholder="Enter your second name" 
+                           required pattern="^[a-zA-Z0-9_]{3,15}$" 
+                           title="Username must be 3-15 characters long and can only contain letters, numbers, and underscores.">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="Enter your Email" 
+                           required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                    
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+            </div>
+            
+            <p><b>Select a Technology Brand:</b></p>
+            <div class="gen-rad">
+                <label>
+                    <input type="radio" id="gender" name="brand" value="Netflix">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" id="gender" name="" value="Audi">
+                    Female
+                </label>
+                
+            </div>
+
+            <!-- <h3 class="heading">Your favourite language</h3>
+            <label class="container">
+                HTML
+                <input type="checkbox" name="language" value="HTML">
+            </label>
+            <label class="container">
+                CSS
+                <input type="checkbox" name="language" value="CSS">
+            </label>
+            <label class="container">
+                JavaScript
+                <input type="checkbox" name="language" value="JavaScript">
+            </label>
+            <label class="container">
+                React
+                <input type="checkbox" name="language" value="React">
+            </label> -->
+            
+            <div class="agree-term">
+                <input type="checkbox" id="agree" name="agree" required />
+                <label for="agree">
+                    I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+            </div>
+            
+            <div class="wrap">
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+        <p>Are you registered? 
+            <a href="signin.html" style="text-decoration: none;">Login</a>
+        </p>
+    </div>
+    <script src="Regester.js"></script>
+</body>
+</html>

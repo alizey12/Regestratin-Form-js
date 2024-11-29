@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regester.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <div class="main">
+        <form action="">
+            <div class="grid-container">
+                <div>
+                    <label for="first">First Name:</label>
+                    <input type="text" id="first" name="first" placeholder="Enter your First Name" required>
+                    
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    
+                    <label for="quantity">Phone Number:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="15">
+                    
+                    <h3 class="heading">Your favourite language</h3>
+                    <label class="container">HTML
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">CSS
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">Javascript
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      
+                      <label class="container">React
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                    
+                      
+                </div>
+                <div>
+                    <label for="second">Last Name:</label>
+                    <input type="text" id="second" name="second" placeholder="Enter your Last Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <div class="gen-rad">
+                        <p>Gender</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="wrap">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <p>Are you registered? 
+            <a href="signin.html" style="text-decoration: none;">Login</a>
+        </p>
+    </div>
+</body>
+</html>

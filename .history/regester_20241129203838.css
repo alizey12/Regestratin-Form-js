@@ -1,0 +1,197 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.2s;
+    width: 800px;
+}
+
+h3 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #4CAF50;
+    font-size: 16px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid container for organizing the form layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-container div {
+    padding: 5px;
+}
+
+/* Styling for the checkboxes and labels */
+.container {
+    display: flex;
+    align-items: center; /* Center checkbox and label vertically */
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styling for checkboxes */
+.container input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label text */
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50; /* Green check color */
+}
+
+/* Styling for the radio button container */
+.gen-rad {
+    margin-top: 20px;
+}
+
+/* Align radio buttons and labels neatly */
+.gen-rad label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.gen-rad input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+    width: 20px;
+    height: 20px;
+}
+
+/* Styling for radio buttons */
+.gen-rad p {
+    font-weight: bold;
+    color: #555;
+}
+
+.container label, .gen-rad label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Adding spacing between elements */
+p {
+    margin-bottom: 20px;
+}
+
+/* Hover and checked states for checkboxes */
+.container:hover {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container input[type="checkbox"]:checked {
+    background-color: #4CAF50; /* Green when checked */
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #279e63;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.agree-term {
+    display: flex;  
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+
+.box input[type="checkbox"] {
+    margin: 0; 
+    padding: 0; 
+    width: auto; 
+}
+
+.agree-term label {
+    font-size: 16px; 
+    color: #fff; 
+}
+
+
+
+.agree-term a:hover {
+    text-decoration: underline; 
+}
